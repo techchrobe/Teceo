@@ -1,0 +1,3 @@
+[submodule "Teceo/vendor/spdlog"]
+	path = Teceo/vendor/spdlog
+	url = https://github.com/gabime/spdlog

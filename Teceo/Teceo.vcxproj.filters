@@ -27,9 +27,15 @@
     <ClInclude Include="src\Teceo\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Teceo\Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Teceo\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Teceo\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

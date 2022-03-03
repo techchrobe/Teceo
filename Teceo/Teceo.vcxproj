@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Teceo\Log.h" />
     <ClInclude Include="src\Teceo.h" />
     <ClInclude Include="src\Teceo\Application.h" />
     <ClInclude Include="src\Teceo\Core.h" />
     <ClInclude Include="src\Teceo\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Teceo\Log.cpp" />
     <ClCompile Include="src\Teceo\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -68,7 +70,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>TC_PLATFORM_WINDOWS;TC_BUILD_DLL;_WINDLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Teceo\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Teceo\src;$(SolutionDir)Teceo\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -83,7 +85,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>TC_PLATFORM_WINDOWS;TC_BUILD_DLL;_WINDLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Teceo\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Teceo\src;$(SolutionDir)Teceo\vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
