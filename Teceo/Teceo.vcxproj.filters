@@ -4,6 +4,9 @@
     <Filter Include="Teceo">
       <UniqueIdentifier>{551F280E-C133-50BF-8AB5-F31EF6884CF0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Teceo\Events">
+      <UniqueIdentifier>{999940C7-85FC-CF6B-2E82-08221AC49BEE}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Teceo.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Teceo\EntryPoint.h">
       <Filter>Teceo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Teceo\Events\ApplicationEvent.h">
+      <Filter>Teceo\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Teceo\Events\Event.h">
+      <Filter>Teceo\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Teceo\Events\KeyEvent.h">
+      <Filter>Teceo\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Teceo\Events\MouseEvent.h">
+      <Filter>Teceo\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Teceo\Log.h">
       <Filter>Teceo</Filter>

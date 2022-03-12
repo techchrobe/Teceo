@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Core.h"
+#include "Teceo/Events/Event.h"
 
 namespace Teceo {
 

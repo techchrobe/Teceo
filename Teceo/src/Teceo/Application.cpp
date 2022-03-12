@@ -1,4 +1,6 @@
 #include "Application.h"
+#include "Teceo/Events/ApplicationEvent.h"
+#include "Teceo/Log.h"
 
 namespace Teceo {
 
@@ -11,6 +13,8 @@ namespace Teceo {
 	}
 
 	void Application::Run() {
+		WindowResizeEvent e(1280, 720);
+		TC_TRACE(e);
 		while (true);
 	}
 }
