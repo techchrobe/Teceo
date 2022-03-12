@@ -8,6 +8,11 @@ workspace "Teceo"
 	}
 	
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+
+IncludeDir = {}
+IncludeDir["GLFW"] = "Teceo/vendor/GLFW/include"
+
+include "Teceo/vendor/GLFW"
 	
 project "Teceo"
 	location "Teceo"
@@ -27,7 +32,13 @@ project "Teceo"
 	
 	includedirs {
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+	
+	links {
+		"GLFW",
+		"opengl32.lib"
 	}
 	
 	filter "system:windows"

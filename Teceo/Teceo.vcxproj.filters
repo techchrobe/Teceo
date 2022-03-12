@@ -35,6 +35,8 @@
       <Filter>Teceo</Filter>
     </ClInclude>
     <ClInclude Include="src\tcpch.h" />
+    <ClInclude Include="src\Teceo\Window.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Teceo\Application.cpp">
@@ -44,5 +46,6 @@
       <Filter>Teceo</Filter>
     </ClCompile>
     <ClCompile Include="src\tcpch.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
   </ItemGroup>
 </Project>

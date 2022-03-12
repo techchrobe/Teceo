@@ -2,6 +2,7 @@
 
 #include "Core.h"
 #include "Teceo/Events/Event.h"
+#include <Teceo/Window.h>
 
 namespace Teceo {
 
@@ -12,6 +13,9 @@ namespace Teceo {
 		virtual ~Application();
 
 		void Run();
+	private:
+		std::unique_ptr<Window> _window;
+		bool _running = true;
 	};
 
 	// To be defined in client

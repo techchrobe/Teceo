@@ -1,3 +1,6 @@
 [submodule "Teceo/vendor/spdlog"]
 	path = Teceo/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Teceo/vendor/GLFW"]
+	path = Teceo/vendor/GLFW
+	url = https://github.com/techchrobe/glfw
