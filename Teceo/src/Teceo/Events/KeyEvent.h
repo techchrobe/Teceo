@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Event.h"
-#include <sstream>
 
 namespace Teceo {
 	class TECEO_API KeyEvent : public Event {

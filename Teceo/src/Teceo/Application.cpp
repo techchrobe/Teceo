@@ -1,3 +1,5 @@
+#include "tcpch.h"
+
 #include "Application.h"
 #include "Teceo/Events/ApplicationEvent.h"
 #include "Teceo/Log.h"

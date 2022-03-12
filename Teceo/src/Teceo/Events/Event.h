@@ -1,9 +1,6 @@
 #pragma once
-
+#include "tcpch.h"
 #include "Teceo/Core.h"
-
-#include <string>
-#include <functional>
 
 namespace Teceo {
 	enum class EventType {
