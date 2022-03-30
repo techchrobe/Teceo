@@ -9,8 +9,8 @@ Simply run the GenerateProjects.bat file.
 ## Base Engine
 Setup, Logging, Event System and Window were done according to the "The Cherno" videos.
 
-## Additions
-Additions can be found in Teceo\src\Teceo in the GameObjects and States folder.
+## Own additional Implementations
+Own additional Implementations can be found in Teceo\src\Teceo in the GameObjects and States folder.
 
 ### Component based Game Objects
 Components can be added and removed from Game Objects. Additionally it can be searched for specific Game Objects.
