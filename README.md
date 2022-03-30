@@ -9,8 +9,8 @@ Simply run the GenerateProjects.bat file.
 ## Base Engine
 Setup, Logging, Event System and Window were done according to the "The Cherno" videos.
 
-## Additions
-Additions can be found in Teceo\src\Teceo in the GameObjects and States folder.
+## Own additional Implementations
+Own additional Implementations can be found in Teceo\src\Teceo in the GameObjects and States folder.
 
 ### Component based Game Objects
 Components can be added and removed from Game Objects. Additionally it can be searched for specific Game Objects.
@@ -21,4 +21,4 @@ A test Game Object with a test Component is created when starting the game.
 States were added together with a simple Game Loop with deltaTime (see Application.cpp). Each State has it's own function for init, update and exit.
 States act like separate "Scenes" each state contains their own Game Object Manager.
 Game Objects are created during Init and updated in Update.
-A test State is that initializes the test Game Object is created when starting the game.
+A test State that initializes the test Game Object is created when starting the game.
