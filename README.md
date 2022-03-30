@@ -4,7 +4,10 @@ Teceo Engine and GameOver game
 by Christina Obereigner
 
 ## How to build:
-Simply run the GenerateProjects.bat file.
+1. Clone the Git Repo with "git clone --recursive https://github.com/techchrobe/Teceo"
+2. Run the GenerateProjects.bat file
+3. Open Teceo.sln
+4. Build and run the project (could be that the Game has to be started a second time because the first time yields errors?)
 
 ## Base Engine
 Setup, Logging, Event System and Window were done according to the "The Cherno" videos.
