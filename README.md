@@ -21,4 +21,4 @@ A test Game Object with a test Component is created when starting the game.
 States were added together with a simple Game Loop with deltaTime (see Application.cpp). Each State has it's own function for init, update and exit.
 States act like separate "Scenes" each state contains their own Game Object Manager.
 Game Objects are created during Init and updated in Update.
-A test State is that initializes the test Game Object is created when starting the game.
+A test State that initializes the test Game Object is created when starting the game.
