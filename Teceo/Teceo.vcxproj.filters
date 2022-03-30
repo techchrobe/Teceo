@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Teceo">
       <UniqueIdentifier>{551F280E-C133-50BF-8AB5-F31EF6884CF0}</UniqueIdentifier>
     </Filter>
     <Filter Include="Teceo\Events">
       <UniqueIdentifier>{999940C7-85FC-CF6B-2E82-08221AC49BEE}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Teceo\GameObjects">
+      <UniqueIdentifier>{C8D1C064-34E8-BEFA-7D5F-4A1CE9B48F82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Teceo\States">
+      <UniqueIdentifier>{7887C2E7-64EA-518C-0D70-8A42F9B11D0F}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
     <ClInclude Include="src\Teceo.h" />
     <ClInclude Include="src\Teceo\Application.h">
       <Filter>Teceo</Filter>
@@ -31,33 +46,60 @@
     <ClInclude Include="src\Teceo\Events\MouseEvent.h">
       <Filter>Teceo\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Teceo\GameObjects\GameObject.h">
+      <Filter>Teceo\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Teceo\GameObjects\GameObjectManager.h">
+      <Filter>Teceo\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Teceo\GameObjects\IComponent.h">
+      <Filter>Teceo\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Teceo\GameObjects\TestComponent.h">
+      <Filter>Teceo\GameObjects</Filter>
+    </ClInclude>
     <ClInclude Include="src\Teceo\Log.h">
       <Filter>Teceo</Filter>
     </ClInclude>
+    <ClInclude Include="src\Teceo\States\IState.h">
+      <Filter>Teceo\States</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Teceo\States\StateManager.h">
+      <Filter>Teceo\States</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Teceo\States\TestState.h">
+      <Filter>Teceo\States</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Teceo\Window.h">
+      <Filter>Teceo</Filter>
+    </ClInclude>
     <ClInclude Include="src\tcpch.h" />
-    <ClInclude Include="src\Teceo\Window.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
-    <ClInclude Include="src\Teceo\GameObjects\GameObject.h" />
-    <ClInclude Include="src\Teceo\GameObjects\IComponent.h" />
-    <ClInclude Include="src\Teceo\GameObjects\GameObjectManager.h" />
-    <ClInclude Include="src\Teceo\GameObjects\TestComponent.h" />
-    <ClInclude Include="src\Teceo\States\IState.h" />
-    <ClInclude Include="src\Teceo\States\StateManager.h" />
-    <ClInclude Include="src\Teceo\States\TestState.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\Teceo\Application.cpp">
       <Filter>Teceo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Teceo\GameObjects\GameObject.cpp">
+      <Filter>Teceo\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Teceo\GameObjects\GameObjectManager.cpp">
+      <Filter>Teceo\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Teceo\GameObjects\TestComponent.cpp">
+      <Filter>Teceo\GameObjects</Filter>
     </ClCompile>
     <ClCompile Include="src\Teceo\Log.cpp">
       <Filter>Teceo</Filter>
     </ClCompile>
+    <ClCompile Include="src\Teceo\States\StateManager.cpp">
+      <Filter>Teceo\States</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Teceo\States\TestState.cpp">
+      <Filter>Teceo\States</Filter>
+    </ClCompile>
     <ClCompile Include="src\tcpch.cpp" />
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
-    <ClCompile Include="src\Teceo\GameObjects\GameObject.cpp" />
-    <ClCompile Include="src\Teceo\GameObjects\GameObjectManager.cpp" />
-    <ClCompile Include="src\Teceo\GameObjects\TestComponent.cpp" />
-    <ClCompile Include="src\Teceo\States\StateManager.cpp" />
-    <ClCompile Include="src\Teceo\States\TestState.cpp" />
   </ItemGroup>
 </Project>

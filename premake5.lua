@@ -1,5 +1,6 @@
 workspace "Teceo"
 	architecture "x64"
+	startproject "GameOver"
 	
 	configurations {
 		"Debug",

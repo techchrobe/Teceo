@@ -146,9 +146,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="src\Teceo\GameObjects\GameObjectManager.h" />
-    <ClInclude Include="src\Teceo\GameObjects\IComponent.h" />
-    <ClInclude Include="src\Teceo\GameObjects\GameObject.h" />
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="src\Teceo.h" />
     <ClInclude Include="src\Teceo\Application.h" />
     <ClInclude Include="src\Teceo\Core.h" />
@@ -157,27 +155,29 @@
     <ClInclude Include="src\Teceo\Events\Event.h" />
     <ClInclude Include="src\Teceo\Events\KeyEvent.h" />
     <ClInclude Include="src\Teceo\Events\MouseEvent.h" />
-    <ClInclude Include="src\Teceo\Log.h" />
-    <ClInclude Include="src\tcpch.h" />
-    <ClInclude Include="src\Teceo\States\IState.h" />
-    <ClInclude Include="src\Teceo\Window.h" />
-    <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
+    <ClInclude Include="src\Teceo\GameObjects\GameObject.h" />
+    <ClInclude Include="src\Teceo\GameObjects\GameObjectManager.h" />
+    <ClInclude Include="src\Teceo\GameObjects\IComponent.h" />
     <ClInclude Include="src\Teceo\GameObjects\TestComponent.h" />
+    <ClInclude Include="src\Teceo\Log.h" />
+    <ClInclude Include="src\Teceo\States\IState.h" />
     <ClInclude Include="src\Teceo\States\StateManager.h" />
     <ClInclude Include="src\Teceo\States\TestState.h" />
+    <ClInclude Include="src\Teceo\Window.h" />
+    <ClInclude Include="src\tcpch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Teceo\GameObjects\GameObjectManager.cpp" />
-    <ClCompile Include="src\Teceo\GameObjects\GameObject.cpp" />
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="src\Teceo\Application.cpp" />
+    <ClCompile Include="src\Teceo\GameObjects\GameObject.cpp" />
+    <ClCompile Include="src\Teceo\GameObjects\GameObjectManager.cpp" />
+    <ClCompile Include="src\Teceo\GameObjects\TestComponent.cpp" />
     <ClCompile Include="src\Teceo\Log.cpp" />
+    <ClCompile Include="src\Teceo\States\StateManager.cpp" />
+    <ClCompile Include="src\Teceo\States\TestState.cpp" />
     <ClCompile Include="src\tcpch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp" />
-    <ClCompile Include="src\Teceo\GameObjects\TestComponent.cpp" />
-    <ClCompile Include="src\Teceo\States\StateManager.cpp" />
-    <ClCompile Include="src\Teceo\States\TestState.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">
