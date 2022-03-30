@@ -19,6 +19,7 @@ namespace Teceo {
 		this->_currentState->update(deltaTime);
 	}
 
+	// When switching states call exit on the current state and init on the next state
 	void StateManager::setState(std::string stateName)
 	{
 		if (this->_currentState != _states[stateName]) {
