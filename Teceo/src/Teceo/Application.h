@@ -4,6 +4,7 @@
 #include "Teceo/Events/Event.h"
 #include "Teceo/Events/ApplicationEvent.h"
 #include <Teceo/Window.h>
+#include "States/TestState.h"
 
 namespace Teceo {
 
@@ -13,13 +14,17 @@ namespace Teceo {
 		Application();
 		virtual ~Application();
 
+		bool init();
 		void Run();
-		void OnEvent(Event& event);
+		void update(float deltaTime);
+		void onEvent(Event& event);
+		void shutdown();
 	private:
-		bool WindowClose(WindowCloseEvent& event);
+		bool windowClose(WindowCloseEvent& event);
 
 		std::unique_ptr<Window> _window;
 		bool _running = true;
+		TestState* _test = new TestState();
 	};
 
 	// To be defined in client

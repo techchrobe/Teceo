@@ -14,7 +14,7 @@ namespace Teceo {
 		using Ptr = std::shared_ptr<IComponent>;
 		using WPtr = std::weak_ptr<IComponent>;
 
-		IComponent(GameObject& gameObject) : _gameObject(gameObject) {}
+		explicit IComponent(GameObject& gameObject) : _gameObject(gameObject) {}
 
 		virtual ~IComponent() = default;
 

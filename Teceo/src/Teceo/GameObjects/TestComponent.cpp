@@ -2,7 +2,9 @@
 #include "TestComponent.h"
 #include "GameObject.h"
 
-void Teceo::TestComponent::update()
-{
-	TC_CORE_INFO(getType() + " of Game Object " + _gameObject.getId() + " says: " + _message);
+namespace Teceo {
+	void Teceo::TestComponent::update(float deltaTime)
+	{
+		TC_CORE_INFO(getType() + " of Game Object " + _gameObject.getId() + " says: " + _message);
+	}
 }
